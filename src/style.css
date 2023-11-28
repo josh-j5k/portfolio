@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Saira:wght@400;700&display=swap");
+
+body {
+	overflow-x: hidden;
+}
+p {
+	font-family: "Saira", "system-ui";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Aldrich", "system-ui";
+}
+button:focus,
+button:focus-visible {
+	outline: 1 solid blue;
+	border: none;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
