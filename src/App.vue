@@ -1,8 +1,18 @@
 <script setup>
   import ApplicationLogo from './components/ApplicationLogo.vue';
   import { onMounted, ref } from 'vue';
+  import { useRouter } from 'vue-router';
+
+  const router = useRouter()
+
   const toggled = ref(false)
   const clipPathDuration = ref(500)
+
+  function homePage() {
+    toggled.value = false
+    router.push('/')
+
+  }
   function navToggle() {
     const nav = document.getElementById('primary_nav')
     toggled.value = !toggled.value
@@ -37,7 +47,7 @@
 <template>
   <header class="h-24 items-center absolute w-full">
     <div class="w-5/6 mx-auto h-[inherit] flex justify-between items-center">
-      <ApplicationLogo class="text-xl" />
+      <ApplicationLogo class="text-xl cursor-pointer" @click="homePage" />
       <button @click="navToggle" type="button" title="nav toggle" class="w-12 h-8 relative z-[9998]">
         <span
           class="w-9 h-0.5 transition-opacity duration-500 bg-primary absolute before:content-string left-0 block before:absolute before:w-5/6 before:h-full before:bg-primary before:-top-3 before:-right-1 after:content-string after:absolute after:w-5/6 after:h-full after:-right-1 after:bg-primary after:top-3"
@@ -48,7 +58,7 @@
         </span>
       </button>
       <nav id="primary_nav"
-        class="fixed primary-nav z-[9997] inset-0 bg-[rgba(0,0,0,0.96)] w-screen h-screen text-white hidden gap-4 text-3xl font-saira">
+        class="fixed primary-nav z-[9997] inset-0 bg-[rgba(0,0,0,0.96)] w-screen h-screen text-white hidden gap-4 text-3xl -md:text-2xl font-saira">
         <router-link to="/">Home</router-link>
         <router-link to="/projects">Projects</router-link>
         <router-link to="/about">About</router-link>

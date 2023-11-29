@@ -11,15 +11,15 @@
 </script>
 
 <template>
-    <div class="md:flex grid grid-cols-1 md:h-screen min-h-screen gap-8 bg-gray-50 shadow-md p-8">
+    <div class="md:flex grid grid-cols-1 md:h-screen gap-8 bg-gray-50 shadow-md p-8 py-14">
         <div class="flex flex-col justify-center -md:row-start-2 -md:row-end-3">
-            <h2 class="capitalize font-bold text-2xl -md:text-center mb-8">{{ title }}</h2>
+            <h2 class="capitalize font-bold text-2xl -md:text-center mb-6">{{ title }}</h2>
             <p class="-md:text-center">
                 <slot />
             </p>
             <div class="mt-8 flex -sm:flex-wrap -md:justify-center gap-3">
                 <a :href="website" target="_blank" v-if="website"
-                    class="border border-primary text-primary rounded capitalize flex text-sm gap-2 w-max px-2 py-1 font-saira">
+                    class="border border-primary text-primary rounded capitalize flex text-sm gap-2 w-max px-2 py-2 font-saira">
                     <span>
                         <i class="fas fa-globe text-primary"></i>
                     </span>
@@ -28,7 +28,7 @@
                     </span>
                 </a>
                 <a :href="design" v-if="design" target="_blank"
-                    class="border bg-primary text-white rounded capitalize flex text-sm gap-2 w-max px-2 py-1 font-saira">
+                    class="border bg-primary text-white rounded capitalize flex text-sm gap-2 w-max px-4 py-2 font-saira">
                     <span>
                         <i class="fa-brands fa-figma text-white"></i>
                     </span>
@@ -37,7 +37,7 @@
                     </span>
                 </a>
                 <a :href="github" v-if="github" target="_blank"
-                    class="border bg-secondary text-white rounded capitalize flex text-sm gap-2 w-max px-2 py-1 font-saira">
+                    class="border bg-secondary text-white rounded capitalize flex text-sm gap-2 w-max px-2 py-2 font-saira">
                     <span>
                         <i class="fa-brands fa-github text-white"></i>
                     </span>

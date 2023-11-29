@@ -1,10 +1,17 @@
 <script setup>
-    import { onMounted, ref } from 'vue';
+    import { onMounted, onUnmounted, ref } from 'vue';
     import HeroIllustration from '../components/HeroIllustration.vue';
     import CaseStudy from '../components/CaseStudy.vue';
     import IconPlusText from '../components/IconPlusText.vue';
 
     const count = ref(0)
+    function addTextClass() {
+        if (scrollY > 40) {
+            document.querySelector('.text_effect').classList.add('show_effect')
+        } else {
+            document.querySelector('.text_effect').classList.remove('show_effect')
+        }
+    }
 
     onMounted(() => {
         const component = document.getElementById('component')
@@ -18,21 +25,20 @@
             count.value++
         }
         const incTimeout = setInterval(increment, 250)
-
-
-
+        window.addEventListener('scroll', addTextClass)
     })
+    onUnmounted(() => window.removeEventListener('scroll', addTextClass))
 </script>
 <template>
     <section class="p-12 pt-36 bg-hero-bg md:h-screen min-h-screen">
         <div class="w-5/6 mx-auto">
             <div class="max-w-lg mx-auto mb-8 pb-8">
-                <p>
+                <p class="-md:text-center">
                     Hi! I am Josh
                 </p>
-                <h1 class="text-3xl md:text-4xl group">
+                <h1 class="text-3xl md:text-4xl -md:text-center group">
                     I am a
-                    <span class="relative">
+                    <span class="relative text_effect">
                         <span class="absolute -left-1 top-0.5 tracking-wide w-fit bg-hero-bg pl-1 z-10 clip-text">
                             Fullstack
                         </span>
@@ -69,8 +75,8 @@
             <p class="capitalize text-2xl mb-8">my recent projects</p>
             <div class="flex flex-col gap-8">
                 <CaseStudy website="https://houseseekershub.com" title="house seeker's hub"
-                    laptop-media="/src/assets/images/2023-11-24 04-14-51(1)(1).mp4"
-                    mobile-media="/src/assets/images/Screen Shot 2023-11-23 at 03.22.28.png"
+                    laptop-media="/assets/images/2023-11-24 04-14-51(1)(1).mp4"
+                    mobile-media="/assets/images/Screen Shot 2023-11-23 at 03.22.28.png"
                     design="https://www.figma.com/file/a8YN2rc8bRaRDp4PSqruSw/Untitled?type=design&mode=design&t=2tY3QDvkgNbXGUBV-1"
                     github="https://github.com/josh-j5k/houseseekershub">
                     This project was build to solve the problem of real estate in my country. House seeker's hub is
@@ -79,15 +85,15 @@
                     property status etc
                 </CaseStudy>
                 <CaseStudy website="https://massehruth.com" title="masseh ruth"
-                    laptop-media="/src/assets/images/2023-11-25 14-36-35(1).mp4"
-                    mobile-media="/src/assets/images/Screen Shot 2023-11-25 at 21.04.45.png"
+                    laptop-media="/assets/images/2023-11-25 14-36-35(1).mp4"
+                    mobile-media="/assets/images/Screen Shot 2023-11-25 at 21.04.45.png"
                     design="https://www.figma.com/file/Mi2Zw0OOL7SMtxzM5pjYXB/Pages?type=design&mode=design&t=2tY3QDvkgNbXGUBV-1">
                     This project was a project I loved building. My sister needed a website for her business to display her
                     work. It is a fullstack website where she can login to her dashboard and add, update and delete
                     collections.
                 </CaseStudy>
-                <CaseStudy title="tray" laptop-media="/src/assets/images/2023-11-25 23-35-19(1)(1).mp4"
-                    mobile-media="/src/assets/images/Screen Shot 2023-11-25 at 23.36.08.png"
+                <CaseStudy title="tray" laptop-media="/assets/images/2023-11-25 23-35-19(1)(1).mp4"
+                    mobile-media="/assets/images/Screen Shot 2023-11-25 at 23.36.08.png"
                     github="https://github.com/josh-j5k/tray"
                     design="https://www.figma.com/file/DiVTS04MpgDS5F4HHHenQ8/Tray?type=design&node-id=0%3A1&mode=design&t=YEm4YUTK0S7tgpTq-1">
                     This project was a fun project. After months of building websites with frameworks and libraries, I
@@ -113,22 +119,22 @@
                     Front-End
                 </h3>
                 <ul class="flex flex-col gap-4">
-                    <IconPlusText icon-link="/src/assets/svg/html5.svg">
+                    <IconPlusText icon-link="/assets/svg/html5.svg">
                         HTML
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/css.svg">
+                    <IconPlusText icon-link="/assets/svg/css.svg">
                         CSS
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/javascript.svg">
+                    <IconPlusText icon-link="/assets/svg/javascript.svg">
                         JavaScript
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/typescript.svg">
+                    <IconPlusText icon-link="/assets/svg/typescript.svg">
                         TypeScript
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/vue.svg">
+                    <IconPlusText icon-link="/assets/svg/vue.svg">
                         Vue
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/tailwindcss.svg">
+                    <IconPlusText icon-link="/assets/svg/tailwindcss.svg">
                         tailwindcss
                     </IconPlusText>
 
@@ -140,13 +146,13 @@
                     Backend
                 </h3>
                 <ul class="flex flex-col gap-4">
-                    <IconPlusText icon-link="/src/assets/svg/php.svg">
+                    <IconPlusText icon-link="/assets/svg/php.svg">
                         PHP
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/laravel.svg">
+                    <IconPlusText icon-link="/assets/svg/laravel.svg">
                         Laravel
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/mysql.svg">
+                    <IconPlusText icon-link="/assets/svg/mysql.svg">
                         mysql
                     </IconPlusText>
                 </ul>
@@ -157,22 +163,22 @@
                     Others
                 </h3>
                 <ul class="flex flex-col gap-4">
-                    <IconPlusText icon-link="/src/assets/svg/wordpress.svg">
+                    <IconPlusText icon-link="/assets/svg/wordpress.svg">
                         WordPress
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/illustrator.svg">
+                    <IconPlusText icon-link="/assets/svg/illustrator.svg">
                         Adobe Illustrator
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/photoshop.svg">
+                    <IconPlusText icon-link="/assets/svg/photoshop.svg">
                         Adobe Photoshop
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/figma.svg">
+                    <IconPlusText icon-link="/assets/svg/figma.svg">
                         Figma
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/git.svg">
+                    <IconPlusText icon-link="/assets/svg/git.svg">
                         Git
                     </IconPlusText>
-                    <IconPlusText icon-link="/src/assets/svg/seo.svg">
+                    <IconPlusText icon-link="/assets/svg/seo.svg">
                         SEO
                     </IconPlusText>
                 </ul>
@@ -195,23 +201,26 @@
                             <label for="name">
                                 Name
                             </label>
-                            <input class="focus:border-0 focus:outline focus:outline-secondary rounded" type="text"
-                                name="name" id="name">
+                            <input
+                                class="focus:border-0 focus:outline py-1.5 focus:outline-secondary rounded text-gray-800 px-4 "
+                                type="text" name="name" id="name">
                         </div>
                         <div class="flex flex-col w-full">
                             <label for="email">
                                 Email
                             </label>
-                            <input class="focus:border-0 focus:outline focus:outline-secondary rounded" type="email"
-                                name="email" id="email">
+                            <input
+                                class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
+                                type="email" name="email" id="email">
                         </div>
                     </div>
                     <div class="flex flex-col">
                         <label for="subjext">
                             Subject
                         </label>
-                        <input class="focus:border-0 focus:outline focus:outline-secondary rounded" type="text"
-                            name="subject" id="subject">
+                        <input
+                            class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
+                            type="text" name="subject" id="subject">
 
                     </div>
                     <div class="flex flex-col">
@@ -219,7 +228,7 @@
                             Message
                         </label>
                         <textarea name="message" id="message" rows="5"
-                            class="focus:border-0 focus:outline focus:outline-secondary rounded"></textarea>
+                            class="focus:border-0 focus:outline focus:outline-secondary rounded p-4 text-gray-800"></textarea>
                     </div>
                     <div class="flex flex-col">
                         <button class="uppercase bg-secondary py-3 rounded-md">
@@ -243,13 +252,13 @@
 
     }
 
-    h1:hover .clip-text {
+    .text_effect.show_effect .clip-text {
         clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
 
     }
 
     .clip-text {
-        transition: clip-path 1000ms ease-in-out;
+        transition: clip-path 700ms ease-in-out;
         clip-path: polygon(0 0, 33% 50%, 0 100%, 0 100%, 33% 50%, 0 0);
     }
 

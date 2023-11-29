@@ -1,4 +1,7 @@
 <script setup>
+    import { onMounted } from 'vue';
+
+    onMounted(() => document.title = "Contact | Achumanzeh")
 </script>
 
 <template>
@@ -24,23 +27,26 @@
                             <label for="name">
                                 Name
                             </label>
-                            <input class="focus:border-0 focus:outline focus:outline-secondary rounded" type="text"
-                                name="name" id="name">
+                            <input
+                                class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
+                                type="text" name="name" id="name">
                         </div>
                         <div class="flex flex-col w-full">
                             <label for="email">
                                 Email
                             </label>
-                            <input class="focus:border-0 focus:outline focus:outline-secondary rounded" type="email"
-                                name="email" id="email">
+                            <input
+                                class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
+                                type="email" name="email" id="email">
                         </div>
                     </div>
                     <div class="flex flex-col">
                         <label for="subjext">
                             Subject
                         </label>
-                        <input class="focus:border-0 focus:outline focus:outline-secondary rounded" type="text"
-                            name="subject" id="subject">
+                        <input
+                            class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
+                            type="text" name="subject" id="subject">
 
                     </div>
                     <div class="flex flex-col">
@@ -48,7 +54,7 @@
                             Message
                         </label>
                         <textarea name="message" id="message" rows="5"
-                            class="focus:border-0 focus:outline focus:outline-secondary rounded"></textarea>
+                            class="focus:border-0 focus:outline focus:outline-secondary rounded p-4 text-gray-800"></textarea>
                     </div>
                     <div class="flex flex-col">
                         <button class="uppercase bg-secondary py-3 rounded-md">
@@ -62,10 +68,11 @@
             <h2 class="text-xl font-bold capitalize mb-4">
                 socials
             </h2>
-            <div class="flex gap-4">
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:info@achumanzeh.com"><i class="fa-solid fa-envelope"></i></a>
+            <div class="flex gap-6">
+                <a href="https://github.com/josh-j5k/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                <a href="www.linkedin.com/in/jong-joshua-06b92a245" target="blank"><i
+                        class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href="mailto:info@achumanzeh.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
             </div>
         </div>
     </section>
