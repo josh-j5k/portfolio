@@ -1,6 +1,6 @@
 <script setup>
     import { onMounted } from 'vue';
-
+    import ContactForm from '../components/ContactForm.vue';
     onMounted(() => document.title = "Contact | Achumanzeh")
 </script>
 
@@ -20,49 +20,7 @@
                 I’m currently looking for new opportunities. Be it full-time, part-time or freelance work. My inbox is
                 always open. Whether you have a question, or work or you just want ro say hi.
             </p>
-            <form action="">
-                <div class="flex flex-col gap-4 max-w-lg mx-auto">
-                    <div class="flex -sm:flex-col gap-8">
-                        <div class="flex flex-col w-full">
-                            <label for="name">
-                                Name
-                            </label>
-                            <input
-                                class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
-                                type="text" name="name" id="name">
-                        </div>
-                        <div class="flex flex-col w-full">
-                            <label for="email">
-                                Email
-                            </label>
-                            <input
-                                class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
-                                type="email" name="email" id="email">
-                        </div>
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="subjext">
-                            Subject
-                        </label>
-                        <input
-                            class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
-                            type="text" name="subject" id="subject">
-
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="message">
-                            Message
-                        </label>
-                        <textarea name="message" id="message" rows="5"
-                            class="focus:border-0 focus:outline focus:outline-secondary rounded p-4 text-gray-800"></textarea>
-                    </div>
-                    <div class="flex flex-col">
-                        <button class="uppercase bg-secondary py-3 rounded-md">
-                            submit
-                        </button>
-                    </div>
-                </div>
-            </form>
+            <ContactForm />
         </div>
         <div class="max-w-lg py-12 mx-auto flex flex-col items-center">
             <h2 class="text-xl font-bold capitalize mb-4">

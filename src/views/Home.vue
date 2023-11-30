@@ -3,6 +3,7 @@
     import HeroIllustration from '../components/HeroIllustration.vue';
     import CaseStudy from '../components/CaseStudy.vue';
     import IconPlusText from '../components/IconPlusText.vue';
+    import ContactForm from '../components/ContactForm.vue';
 
     const count = ref(0)
     function addTextClass() {
@@ -98,7 +99,7 @@
                     design="https://www.figma.com/file/DiVTS04MpgDS5F4HHHenQ8/Tray?type=design&node-id=0%3A1&mode=design&t=YEm4YUTK0S7tgpTq-1">
                     This project was a fun project. After months of building websites with frameworks and libraries, I
                     wanted to convert a design into a website with just plain old HTML and CSS. This project was designed by
-                    [insert name]. She is a great designer. <a class="underline text-blue-500"
+                    Mboyi Designs. She is a great designer. <a class="underline text-blue-500"
                         href="https://www.linkedin.com/in/stephanie-weghemboyi-nkwatoh-55b008173/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">More
                         designs from her</a>
                 </CaseStudy>
@@ -194,49 +195,7 @@
                 I’m currently looking for new opportunities. Be it full-time, part-time or freelance work. My inbox is
                 always open. Whether you have a question, or work or you just want ro say hi.
             </p>
-            <form action="">
-                <div class="flex flex-col gap-4 max-w-lg mx-auto">
-                    <div class="flex -sm:flex-col gap-8">
-                        <div class="flex flex-col w-full">
-                            <label for="name">
-                                Name
-                            </label>
-                            <input
-                                class="focus:border-0 focus:outline py-1.5 focus:outline-secondary rounded text-gray-800 px-4 "
-                                type="text" name="name" id="name">
-                        </div>
-                        <div class="flex flex-col w-full">
-                            <label for="email">
-                                Email
-                            </label>
-                            <input
-                                class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
-                                type="email" name="email" id="email">
-                        </div>
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="subjext">
-                            Subject
-                        </label>
-                        <input
-                            class="focus:border-0 focus:outline focus:outline-secondary rounded py-1.5 text-gray-800 px-4 "
-                            type="text" name="subject" id="subject">
-
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="message">
-                            Message
-                        </label>
-                        <textarea name="message" id="message" rows="5"
-                            class="focus:border-0 focus:outline focus:outline-secondary rounded p-4 text-gray-800"></textarea>
-                    </div>
-                    <div class="flex flex-col">
-                        <button class="uppercase bg-secondary py-3 rounded-md">
-                            submit
-                        </button>
-                    </div>
-                </div>
-            </form>
+            <ContactForm />
         </div>
     </section>
 </template>

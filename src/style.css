@@ -19,6 +19,13 @@ button:focus-visible {
 	outline: 1 solid blue;
 	border: none;
 }
+.toast {
+	position: fixed;
+	top: 12px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 9999;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
