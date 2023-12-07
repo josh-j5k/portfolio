@@ -15,7 +15,8 @@
                 About Me
             </h2>
             <p>
-                My name is Jong Joshua Achumanzeh and I am a fullstack developer. I love creating user interfaces with user
+                My name is Joshua (Achumanzeh) Jong and I am a fullstack developer. I love creating user interfaces with
+                user
                 experience being the top priority. Hence, my love for minimalistic websites.
             </p>
             <hr class="w-5/6 h-1 my-8">
