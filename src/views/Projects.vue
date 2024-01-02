@@ -59,15 +59,17 @@
                             </a>
                         </div>
                     </div>
-                    <div class="flex items-center -md:justify-center gap-2">
+                    <div class="flex items-center -md:justify-center  gap-2">
 
-                        <div class="relative isolate -md:hidden">
-                            <img src="../assets/images/laptop.png" alt="laptop mockup" class="max-w-md ">
-                            <video src="../assets/images/Untitled video - Made with Clipchamp (1).mp4" loop controls muted
-                                alt="" class="absolute w-[78%] inset-0 left-[51px] -top-1 h-[90%] z-10 ">
-                                <source src="../assets/images/Untitled video - Made with Clipchamp (1).mp4">
+                        <div class="relative isolate">
+                            <img src="../assets/images/laptop.png" alt="laptop mockup" class="max-w-md -md:w-full ">
+                            <video loop controls muted preload="metadata" alt=""
+                                class="absolute w-[78%] inset-0 left-12 -md:left-8 -top-1 -md:-top-4 h-[90%] -md:h-full z-10 ">
+                                <source src="../assets/images/Untitled video - Made with Clipchamp (1).mp4#t=0.1">
+
                             </video>
-                            <span class="absolute w-4/5 inset-0 left-12 -top-0 -z-20 bg-black rounded-3xl"></span>
+                            <span
+                                class="absolute w-4/5 inset-0 -md:left-8 left-12 -top-0 -z-20 bg-black rounded-3xl"></span>
                         </div>
                     </div>
                 </div>
