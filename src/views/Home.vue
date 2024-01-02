@@ -93,16 +93,40 @@
                     work. It is a fullstack website where she can login to her dashboard and add, update and delete
                     collections.
                 </CaseStudy>
-                <CaseStudy title="tray" laptop-media="/assets/images/2023-11-25 23-35-19(1)(1).mp4"
-                    mobile-media="/assets/images/Screen Shot 2023-11-25 at 23.36.08.png"
-                    github="https://github.com/josh-j5k/tray"
-                    design="https://www.figma.com/file/DiVTS04MpgDS5F4HHHenQ8/Tray?type=design&node-id=0%3A1&mode=design&t=YEm4YUTK0S7tgpTq-1">
-                    This project was a fun project. After months of building websites with frameworks and libraries, I
-                    wanted to convert a design into a website with just plain old HTML and CSS. This project was designed by
-                    Mboyi Designs. She is a great designer. <a class="underline text-blue-500"
-                        href="https://www.linkedin.com/in/stephanie-weghemboyi-nkwatoh-55b008173/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">More
-                        designs from her</a>
-                </CaseStudy>
+                <div class="md:flex grid grid-cols-1 md:h-screen gap-8 bg-gray-50 shadow-md p-8 py-14">
+                    <div class="flex flex-col justify-center -md:row-start-2 -md:row-end-3">
+                        <h2 class="capitalize font-bold text-2xl -md:text-center mb-6">Solitaire</h2>
+                        <p class="-md:text-center">
+                            This is a fun project. I was bored, I wanted to play solitaire but the one that comes with
+                            Windows is full of ads. So I decided to spend the next days designing and building mine. While
+                            at it I thought it'll be great building it with Svelte, since I've never worked with the
+                            framework before. Overall a fun project.
+                        </p>
+                        <div class="mt-8 flex -sm:flex-wrap -md:justify-center gap-3">
+
+                            <a href="https://github.com/josh-j5k/solitaire.git" target="_blank"
+                                class="border bg-secondary text-white rounded capitalize flex text-sm gap-2 w-max px-2 py-2 font-saira">
+                                <span>
+                                    <i class="fa-brands fa-github text-white"></i>
+                                </span>
+                                <span>
+                                    view code
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center -md:justify-center gap-2">
+
+                        <div class="relative isolate -md:hidden">
+                            <img src="../assets/images/laptop.png" alt="laptop mockup" class="max-w-md ">
+                            <video src="../assets/images/Untitled video - Made with Clipchamp (1).mp4" loop controls muted
+                                alt="" class="absolute w-[78%] inset-0 left-[51px] -top-1 h-[90%] z-10 ">
+                                <source src="../assets/images/Untitled video - Made with Clipchamp (1).mp4">
+                            </video>
+                            <span class="absolute w-4/5 inset-0 left-12 -top-0 -z-20 bg-black rounded-3xl"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -134,6 +158,9 @@
                     </IconPlusText>
                     <IconPlusText icon-link="/assets/svg/vue.svg">
                         Vue
+                    </IconPlusText>
+                    <IconPlusText icon-link="/assets/svg/vue.svg">
+                        Svelte
                     </IconPlusText>
                     <IconPlusText icon-link="/assets/svg/tailwindcss.svg">
                         tailwindcss

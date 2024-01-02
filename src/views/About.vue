@@ -17,7 +17,12 @@
             <p>
                 My name is Joshua (Achumanzeh) Jong and I am a fullstack developer. I love creating user interfaces with
                 user
-                experience being the top priority. Hence, my love for minimalistic websites.
+                experience being the top priority. Hence, my love for minimalistic websites.I love fixing things, be it an
+                electronic that is damaged or a bug. There is sense of satisfaction I get after debugging that is difficult
+                to explain. I love software engineering just for the fact that I can see a problem and create an app or
+                website that helps a lot of people. Personality wise I love working in my comfort space, though working with
+                others has it's perks and all as I've worked with other devs before and I work well others. I'd still prefer
+                to work in my space.
             </p>
             <hr class="w-5/6 h-1 my-8">
             <h3 class="mb-6 text-xl capitalize">
@@ -47,12 +52,6 @@
                 </p>
             </div>
             <hr class="w-5/6 h-1 my-8">
-            <h3 class="mb-6 text-xl">
-                Hobbies and Interest
-            </h3>
-            <p>
-                Apart from coding, I like playing video games, watching and playing basketball, watching anime.
-            </p>
-        </div>
-    </section>
-</template>
+
+    </div>
+</section></template>

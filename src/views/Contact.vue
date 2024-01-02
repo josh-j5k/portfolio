@@ -28,8 +28,7 @@
             </h2>
             <div class="flex gap-6">
                 <a href="https://github.com/josh-j5k/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-                <a href="www.linkedin.com/in/jong-joshua-06b92a245" target="blank"><i
-                        class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href="www.linkedin.com/in/achumanzeh" target="blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
                 <a href="mailto:info@achumanzeh.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
             </div>
         </div>
