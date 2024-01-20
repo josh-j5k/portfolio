@@ -83,6 +83,43 @@
                         href="https://www.linkedin.com/in/stephanie-weghemboyi-nkwatoh-55b008173/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">More
                         designs from her</a>
                 </CaseStudy>
+                <div class="md:flex grid grid-cols-1 md:h-screen gap-8 bg-gray-50 shadow-md p-8 py-14">
+                    <div class="flex flex-col justify-center -md:row-start-2 -md:row-end-3">
+                        <h2 class="capitalize font-bold text-2xl -md:text-center mb-6">Empomart</h2>
+                        <p class="-md:text-center">
+                            This project was project I did for my WordPress skill assessment test. I was to build an
+                            e-commerce with mordern and unique feel with no premium themes nor premium plugins. I did a lot
+                            of custom css on this webiste to get unitque feel to it
+                        </p>
+                        <div class="mt-8 flex -sm:flex-wrap -md:justify-center gap-3">
+
+                            <a href="https://empomat.vmediaconsulting.co/" target="_blank"
+                                class="border border-primary text-primary rounded capitalize flex text-sm gap-2 w-max px-2 py-2 font-saira">
+                                <span>
+                                    <i class="fas fa-globe text-primary"></i>
+                                </span>
+                                <span>
+                                    view website
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center -md:justify-center  gap-2">
+                        <div class="relative isolate">
+                            <img src="../assets/images/Iphone.png" alt="iPhone mockup" class="max-w-[150px]">
+                            <img src="../assets/images/Screen Shot 2024-01-20 at 02.16.321.png" alt=""
+                                class="absolute inset-0 left-2 top-6 rounded-[0_0_16px_16px] -z-10 w-[89%] h-[90%]">
+                            <span class="absolute w-[88%] h-12 inset-0 left-2  top-1 -z-20 bg-zinc-700 rounded-2xl"></span>
+                        </div>
+                        <div class="relative isolate -md:hidden">
+                            <img src="../assets/images/laptop.png" alt="laptop mockup" class="max-w-md -md:w-full ">
+                            <img src="../assets/images/Screenshot 2024-01-20 at 02-15-53 Empomart Cameroon – Online Shopping Center1.png"
+                                alt="" class="absolute w-[78%] inset-0 -z-10 left-[52px] -md:left-8 top-8 -md:-top-4  " />
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
