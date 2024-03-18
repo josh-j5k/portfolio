@@ -1,34 +1,34 @@
 <script setup>
-    import { onMounted, onUnmounted, ref } from 'vue';
-    import HeroIllustration from '../components/HeroIllustration.vue';
-    import CaseStudy from '../components/CaseStudy.vue';
-    import IconPlusText from '../components/IconPlusText.vue';
-    import ContactForm from '../components/ContactForm.vue';
+import { onMounted, onUnmounted, ref } from 'vue';
+import HeroIllustration from '../components/HeroIllustration.vue';
+import CaseStudy from '../components/CaseStudy.vue';
+import IconPlusText from '../components/IconPlusText.vue';
+import ContactForm from '../components/ContactForm.vue';
 
-    const count = ref(0)
-    function addTextClass() {
-        if (scrollY > 40) {
-            document.querySelector('.text_effect').classList.add('show_effect')
-        } else {
-            document.querySelector('.text_effect').classList.remove('show_effect')
-        }
+const count = ref(0)
+function addTextClass() {
+    if (scrollY > 40) {
+        document.querySelector('.text_effect').classList.add('show_effect')
+    } else {
+        document.querySelector('.text_effect').classList.remove('show_effect')
     }
+}
 
-    onMounted(() => {
-        const component = document.getElementById('component')
-        const paths = component.querySelectorAll('path')
+onMounted(() => {
+    const component = document.getElementById('component')
+    const paths = component.querySelectorAll('path')
 
-        function increment() {
-            if (count.value > paths.length - 2) {
-                clearInterval(incTimeout)
-            }
-            paths[count.value].classList.add('aniPath')
-            count.value++
+    function increment() {
+        if (count.value > paths.length - 2) {
+            clearInterval(incTimeout)
         }
-        const incTimeout = setInterval(increment, 250)
-        window.addEventListener('scroll', addTextClass)
-    })
-    onUnmounted(() => window.removeEventListener('scroll', addTextClass))
+        paths[count.value].classList.add('aniPath')
+        count.value++
+    }
+    const incTimeout = setInterval(increment, 250)
+    window.addEventListener('scroll', addTextClass)
+})
+onUnmounted(() => window.removeEventListener('scroll', addTextClass))
 </script>
 <template>
     <section class="p-12 pt-36 bg-hero-bg md:h-screen min-h-screen">
@@ -81,7 +81,8 @@
                     design="https://www.figma.com/file/a8YN2rc8bRaRDp4PSqruSw/Untitled?type=design&mode=design&t=2tY3QDvkgNbXGUBV-1"
                     github="https://github.com/josh-j5k/houseseekershub">
                     This project was build to solve the problem of real estate in my country. House seeker's hub is
-                    platform where authenticated users can post edit and delete listings, and users can view listings based
+                    platform where authenticated users can post edit and delete listings, and users can view listings
+                    based
                     on location,
                     property status etc
                 </CaseStudy>
@@ -89,7 +90,8 @@
                     laptop-media="/assets/images/2023-11-25 14-36-35(1).mp4"
                     mobile-media="/assets/images/Screen Shot 2023-11-25 at 21.04.45.png"
                     design="https://www.figma.com/file/Mi2Zw0OOL7SMtxzM5pjYXB/Pages?type=design&mode=design&t=2tY3QDvkgNbXGUBV-1">
-                    This project was a project I loved building. My sister needed a website for her business to display her
+                    This project was a project I loved building. My sister needed a website for her business to display
+                    her
                     work. It is a fullstack website where she can login to her dashboard and add, update and delete
                     collections.
                 </CaseStudy>
@@ -98,7 +100,8 @@
                         <h2 class="capitalize font-bold text-2xl -md:text-center mb-6">Solitaire</h2>
                         <p class="-md:text-center">
                             This is a fun project. I was bored, I wanted to play solitaire but the one that comes with
-                            Windows is full of ads. So I decided to spend the next days designing and building mine. While
+                            Windows is full of ads. So I decided to spend the next days designing and building mine.
+                            While
                             at it I thought it'll be great building it with Svelte, since I've never worked with the
                             framework before. Overall a fun project.
                         </p>
@@ -134,7 +137,7 @@
     <section class="pb-12">
         <div class="bg-secondary h-[30vh] pt-12">
             <h2 class="capitalize w-5/6 mx-auto text-2xl text-white">
-                skills and technologies
+                technical skills
             </h2>
         </div>
         <div
@@ -160,11 +163,14 @@
                     <IconPlusText icon-link="/assets/svg/vue.svg">
                         Vue
                     </IconPlusText>
-                    <IconPlusText icon-link="/assets/svg/vue.svg">
+                    <IconPlusText icon-link="/assets/svg/svelte.svg">
                         Svelte
                     </IconPlusText>
+                    <IconPlusText icon-link="/assets/svg/react.svg">
+                        React Js
+                    </IconPlusText>
                     <IconPlusText icon-link="/assets/svg/tailwindcss.svg">
-                        tailwindcss
+                        Tailwindcss
                     </IconPlusText>
 
                 </ul>
@@ -229,34 +235,34 @@
 </template>
 
 <style scoped>
-    .stroke-visible {
-        opacity: 1;
-    }
+.stroke-visible {
+    opacity: 1;
+}
 
-    .backdrop-filter {
-        position: relative;
-        border-radius: 10px;
+.backdrop-filter {
+    position: relative;
+    border-radius: 10px;
 
-    }
+}
 
-    .text_effect.show_effect .clip-text {
-        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
+.text_effect.show_effect .clip-text {
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
 
-    }
+}
 
-    .clip-text {
-        transition: clip-path 700ms ease-in-out;
-        clip-path: polygon(0 0, 33% 50%, 0 100%, 0 100%, 33% 50%, 0 0);
-    }
+.clip-text {
+    transition: clip-path 700ms ease-in-out;
+    clip-path: polygon(0 0, 33% 50%, 0 100%, 0 100%, 33% 50%, 0 0);
+}
 
-    .backdrop-filter::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        inset: 0;
-        z-index: -1;
-        background-color: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(10px);
-    }
+.backdrop-filter::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
 </style>
