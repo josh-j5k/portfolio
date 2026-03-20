@@ -89,7 +89,7 @@ onUnmounted(() => window.removeEventListener('scroll', addTextClass))
                 <CaseStudy website="https://massehruth.com" title="masseh ruth"
                     laptop-media="/assets/images/2023-11-25 14-36-35(1).mp4"
                     mobile-media="/assets/images/Screen Shot 2023-11-25 at 21.04.45.png"
-                    design="https://www.figma.com/file/Mi2Zw0OOL7SMtxzM5pjYXB/Pages?type=design&mode=design&t=2tY3QDvkgNbXGUBV-1">
+                    design="https://www.figma.com/design/Mi2Zw0OOL7SMtxzM5pjYXB/Pages?node-id=0-1&t=jwqYw556keISAnMZ-1">
                     This project was a project I loved building. My sister needed a website for her business to display
                     her
                     work. It is a fullstack website where she can login to her dashboard and add, update and delete

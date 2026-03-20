@@ -1,9 +1,9 @@
 <script setup>
-    import { onMounted } from 'vue';
-    import CaseStudy from '../components/CaseStudy.vue';
-    onMounted(() => {
-        document.title = "My Projects | Achumanzeh"
-    })
+import { onMounted } from 'vue';
+import CaseStudy from '../components/CaseStudy.vue';
+onMounted(() => {
+    document.title = "My Projects | Achumanzeh"
+})
 </script>
 
 <template>
@@ -24,7 +24,8 @@
                     design="https://www.figma.com/file/a8YN2rc8bRaRDp4PSqruSw/Untitled?type=design&mode=design&t=2tY3QDvkgNbXGUBV-1"
                     github="https://github.com/josh-j5k/houseseekershub">
                     This project was build to solve the problem of real estate in my country. House seeker's hub is
-                    platform where authenticated users can post edit and delete listings, and users can view listings based
+                    platform where authenticated users can post edit and delete listings, and users can view listings
+                    based
                     on location,
                     property status etc
                 </CaseStudy>
@@ -32,8 +33,9 @@
                 <CaseStudy website="https://massehruth.com" title="masseh ruth"
                     laptop-media="/assets/images/2023-11-25 14-36-35(1).mp4"
                     mobile-media="/assets/images/Screen Shot 2023-11-25 at 21.04.45.png"
-                    design="https://www.figma.com/file/Mi2Zw0OOL7SMtxzM5pjYXB/Pages?type=design&mode=design&t=2tY3QDvkgNbXGUBV-1">
-                    This project was a project I loved building. My sister needed a website for her business to display her
+                    design="https://www.figma.com/design/Mi2Zw0OOL7SMtxzM5pjYXB/Pages?node-id=0-1&t=jwqYw556keISAnMZ-1">
+                    This project was a project I loved building. My sister needed a website for her business to display
+                    her
                     work. It is a fullstack website where she can login to her dashboard and add, update and delete
                     collections.
                 </CaseStudy>
@@ -42,7 +44,8 @@
                         <h2 class="capitalize font-bold text-2xl -md:text-center mb-6">Solitaire</h2>
                         <p class="-md:text-center">
                             This is a fun project. I was bored, I wanted to play solitaire but the one that comes with
-                            Windows is full of ads. So I decided to spend the next days designing and building mine. While
+                            Windows is full of ads. So I decided to spend the next days designing and building mine.
+                            While
                             at it I thought it'll be great building it with Svelte, since I've never worked with the
                             framework before. Overall a fun project.
                         </p>
@@ -78,7 +81,8 @@
                     github="https://github.com/josh-j5k/tray"
                     design="https://www.figma.com/file/DiVTS04MpgDS5F4HHHenQ8/Tray?type=design&node-id=0%3A1&mode=design&t=YEm4YUTK0S7tgpTq-1">
                     This project was a fun project. After months of building websites with frameworks and libraries, I
-                    wanted to convert a design into a website with just plain old HTML and CSS. This project was designed by
+                    wanted to convert a design into a website with just plain old HTML and CSS. This project was
+                    designed by
                     [insert name]. She is a great designer. <a class="underline text-blue-500"
                         href="https://www.linkedin.com/in/stephanie-weghemboyi-nkwatoh-55b008173/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">More
                         designs from her</a>
@@ -88,7 +92,8 @@
                         <h2 class="capitalize font-bold text-2xl -md:text-center mb-6">Empomart</h2>
                         <p class="-md:text-center">
                             This project was project I did for my WordPress skill assessment test. I was to build an
-                            e-commerce with mordern and unique feel with no premium themes nor premium plugins. I did a lot
+                            e-commerce with mordern and unique feel with no premium themes nor premium plugins. I did a
+                            lot
                             of custom css on this webiste to get unitque feel to it
                         </p>
                         <div class="mt-8 flex -sm:flex-wrap -md:justify-center gap-3">
@@ -109,12 +114,14 @@
                             <img src="../assets/images/Iphone.png" alt="iPhone mockup" class="max-w-[150px]">
                             <img src="../assets/images/Screen Shot 2024-01-20 at 02.16.321.png" alt=""
                                 class="absolute inset-0 left-2 top-6 rounded-[0_0_16px_16px] -z-10 w-[89%] h-[90%]">
-                            <span class="absolute w-[88%] h-12 inset-0 left-2  top-1 -z-20 bg-zinc-700 rounded-2xl"></span>
+                            <span
+                                class="absolute w-[88%] h-12 inset-0 left-2  top-1 -z-20 bg-zinc-700 rounded-2xl"></span>
                         </div>
                         <div class="relative isolate -md:hidden">
                             <img src="../assets/images/laptop.png" alt="laptop mockup" class="max-w-md -md:w-full ">
                             <img src="../assets/images/Screenshot 2024-01-20 at 02-15-53 Empomart Cameroon – Online Shopping Center1.png"
-                                alt="" class="absolute w-[78%] inset-0 -z-10 left-[52px] -md:left-8 top-8 -md:-top-4  " />
+                                alt=""
+                                class="absolute w-[78%] inset-0 -z-10 left-[52px] -md:left-8 top-8 -md:-top-4  " />
 
 
                         </div>
